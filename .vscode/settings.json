@@ -2,5 +2,11 @@
   "editor.tabSize": 2,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "always"
-  }
+  },
+  "cucumber.features": [
+    "cypress/e2e/features/*.feature"
+  ],
+  "cucumber.glue": [
+    "cypress/e2e/step_definitions/*.js"
+  ]
 }

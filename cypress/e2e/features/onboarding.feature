@@ -1,3 +1,4 @@
+@Onboarding
 Feature: Onboarding
 
   Background:
@@ -6,9 +7,10 @@ Feature: Onboarding
     And I enter a valid onboarding user password
     And I click the login button
 
+  @Wellcome @Subscription @BankConnection @Profille
   Scenario: New user is redirected to the onboarding flow and completes all steps
        
-       @Wellcome
+    
     Given I should be redirected to the onboarding page
     When I navigate to slide 1
     Then I should see the onboarding title and subtitle
@@ -22,7 +24,6 @@ Feature: Onboarding
     Then I should see the onboarding title and subtitle
     And I click the Get Started button
       
-      @Subscription
     Then I should be redirected to the Subscription page
     And I should see the Premium annual plan card with its features
     And I should see the Basic annual plan card with its features
@@ -37,7 +38,6 @@ Feature: Onboarding
     And I check the next steps card to unlock benefits
     Then I click in continue button
       
-      @BankConnection
     Then I should be redirected to the Bank Connection page
     And I should see the General Accounts section with all options and descriptions
     When I click the Connect button for Bank & HSA FSA Accounts
@@ -49,5 +49,3 @@ Feature: Onboarding
     Then I should see the Chase login instructions screen
     When I click on the Continue to Login button
     Then I should be redirected to the final login page
-
-      @Profille
