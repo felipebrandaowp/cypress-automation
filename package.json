@@ -1,0 +1,38 @@
+{
+  "name": "wellnesspay-qa",
+  "version": "1.0.0",
+  "description": "Automated tests with Cypress and Cucumber",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "cypress:run:staging": "cypress run --env configFile=staging",
+    "cypress:open:staging": "cypress open --env configFile=staging",
+    "cypress:run:production": "cypress run --env configFile=production",
+    "test:staging": "npm run cypress:run:staging && npm run generate:report",
+    "test:production": "npm run cypress:run:production && npm run generate:report",
+    "generate:report": "node cypress/support/generate-report.js",
+    "test": "npm run cypress:run"
+  },
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^22.2.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.5",
+    "@cypress/webpack-preprocessor": "^6.0.4",
+    "@faker-js/faker": "^8.4.1",
+    "cypress": "^14.5.0",
+    "cypress-mochawesome-reporter": "^3.8.1",
+    "eslint": "^9.30.1",
+    "eslint-plugin-cypress": "^5.1.0",
+    "multiple-cucumber-html-reporter": "^3.6.2"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "stepDefinitions": "cypress/support/step_definitions/**",
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  }
+}

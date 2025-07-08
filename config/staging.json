@@ -1,0 +1,17 @@
+{
+  "baseUrl": "https://staging-wellnesspay.lovable.app/",
+  "validEmail": "felipe.brandao+10@wellnesspay.com",
+  "validPassword": "test@123",
+  "invalidEmail": "incorrect_email@wellnesspay.com",
+  "invalidPassword": "incorrect_password",
+  "onboardingEmail": "felipe.brandao+23@wellnesspay.com",
+  "onboardingPassword": "test@123",
+  "apiUrl": "",
+  "timeout": 10000,
+  "retries": 2,
+  "environment": "staging",
+  "features": {
+    "enableNewDashboard": true,
+    "enableBetaFeatures": true
+  }
+}
