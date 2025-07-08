@@ -49,7 +49,7 @@ module.exports = defineConfig({
     },
 
     cucumber: {
-      stepDefinitions: 'cypress/support/step_definitions'
+      stepDefinitions: 'cypress/e2e/step_definitions'
     }
   }
 });
