@@ -1,6 +1,6 @@
 {
   "baseUrl": "https://staging-wellnesspay.lovable.app/",
-  "validEmail": "felipe.brandao+10@wellnesspay.com",
+  "validEmail": "felipe.brandao+5@wellnesspay.com",
   "validPassword": "test@123",
   "invalidEmail": "incorrect_email@wellnesspay.com",
   "invalidPassword": "incorrect_password",

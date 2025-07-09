@@ -31,12 +31,12 @@ Feature: Onboarding
     Then I should see the Premium monthly plan card with its features
     And I should see the Basic monthly plan card with its features
     When I return to the annual plans page
-    And I choose the Premium annual plan
+    And I chose the Premium annual plan
     Then I fill in the card details and confirm
     And I confirm that the annual plan was successfully confirmed
     And I verify the Premium annual plan details
     And I check the next steps card to unlock benefits
-    Then I click in continue button
+    Then I click the Continue button
       
     Then I should be redirected to the Bank Connection page
     And I should see the General Accounts section with all options and descriptions
