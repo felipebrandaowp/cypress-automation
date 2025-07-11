@@ -6,6 +6,8 @@
   "invalidPassword": "incorrect_password",
   "onboardingEmail": "felipe.brandao+23@wellnesspay.com",
   "onboardingPassword": "test@123",
+  "validDoctorEmail": "felipe.brandao+6@wellnesspay.com",
+  "validDoctorPassword": "test@123",
   "apiUrl": "",
   "timeout": 10000,
   "retries": 2,
