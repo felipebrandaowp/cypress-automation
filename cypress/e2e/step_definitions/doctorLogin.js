@@ -3,10 +3,6 @@ import LoginPage from '../../support/pages/loginPage';
 
 const loginPage = new LoginPage();
 
-Given('I am on the login page', () => {
-  loginPage.visit();
-});
-
 When('I enter a valid doctor email', () => {
   loginPage.fillEmail(Cypress.env('validDoctorEmail'));
 });
