@@ -42,6 +42,33 @@ class WalletPage {
       .should('not.exist');
   }
 
+  validateReceiptScannerTitle() {
+    cy.get('.text-lg.font-semibold.leading-none.tracking-tight.flex.items-center.gap-2')
+      .should('contain', 'Receipt Scanner');
+  }
+
+  clickButtonWithLongClass() {
+    cy.get('.p-3 > .justify-between > .flex.gap-2 > .justify-center')
+      .click();
+  }
+
+  fillPriceFieldWith50() {
+    cy.get('input[placeholder="Price"]')
+      .clear()
+      .type('5');
+  }
+
+  validatePriceIs50Dollars() {
+    cy.get('.bg-blue-50')
+      .should('contain', '$50.00');
+  }
+
+  clickSaveReceipt() {
+    cy.get('.justify-end > .bg-primary')
+      .click();
+  }
+
+
 }
 
 export default new WalletPage();

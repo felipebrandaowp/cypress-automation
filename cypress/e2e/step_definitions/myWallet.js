@@ -33,3 +33,19 @@ When('I click on the Process Receipt button', () => {
 Then('I wait for the receipt to finish processing', () => {
   myWalletPage.waitForReceiptProcessing();
 });
+
+Then('I click on the specific button with long class', () => {
+  myWalletPage.clickButtonWithLongClass();
+});
+
+When('I fill the Price field with 50', () => {
+  myWalletPage.fillPriceFieldWith50();
+});
+
+Then('I should see the value as $50.00', () => {
+  myWalletPage.validatePriceIs50Dollars();
+});
+
+When('I click on Save Receipt', () => {
+  myWalletPage.clickSaveReceipt();
+});
