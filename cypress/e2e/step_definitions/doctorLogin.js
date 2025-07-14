@@ -7,7 +7,7 @@ When('I enter a valid doctor email', () => {
   loginPage.fillEmail(Cypress.env('validDoctorEmail'));
 });
 
-When('I enter a valid password', () => {
+When('I enter a valid doctor password', () => {
   loginPage.fillPassword(Cypress.env('validDoctorPassword'));
 });
 
