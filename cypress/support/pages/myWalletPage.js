@@ -8,7 +8,7 @@ class WalletPage {
   validateRedirectToWallet() {
     cy.url()
       .should('include', '/wallet');
-    cy.get('.space-y-6.p-6 > :nth-child(1) > .flex > .text-2xl')
+    cy.get('.text-xl')
       .should('contain', 'My Wallet');
   }
 

@@ -41,7 +41,7 @@ Then('I should be redirected to the dashboard', () => {
 });
 
 Then('I should see the welcome message', () => {
-  cy.get('.text-xl.font-semibold.text-gray-900')
+  cy.get('.text-lg > .font-semibold')
     .should('be.visible')
     .and('contain.text', 'Welcome Back,');
 });

@@ -8,9 +8,8 @@ class AppointmentsPage {
   validateAppointmentsPage() {
     cy.url()
       .should('include', '/appointments');
-    cy.get(
-      '.text-2xl.font-semibold.leading-none.tracking-tight.flex.items-center.gap-2'
-    ).should('contain', 'Appointments');
+    cy.get('.text-2xl.font-semibold.leading-none.tracking-tight.flex.items-center.gap-2')
+      .should('contain', 'Appointments');
   }
 
   clickScheduleAppointment() {
