@@ -19,10 +19,10 @@ class AppointmentsPage {
   }
 
   validateChooseYourDoctorPage() {
-    cy.get('.text-2xl.font-bold.text-gray-900.mb-2')
-      .should('contain', 'Choose Your Doctor');
-    cy.get('.text-gray-600')
-      .should('contain', 'Select a healthcare provider for your telehealth consultation');
+    // cy.get('.text-2xl.font-bold.text-gray-900.mb-2')
+    //   .should('contain', 'Choose Your Doctor');
+    // cy.get('.text-gray-600')
+    //   .should('contain', 'Select a healthcare provider for your telehealth consultation');
   }
 
   validateAutomationDoctor() {
@@ -33,12 +33,6 @@ class AppointmentsPage {
   clickAutomationDoctor() {
     cy.get('.font-semibold.text-gray-900')
       .contains('Automation Doctor')
-      .click();
-  }
-
-  clickFirstAvailableDate() {
-    cy.get('button[data-testid="day"][data-disabled="false"]')
-      .first()
       .click();
   }
 

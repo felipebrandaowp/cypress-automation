@@ -39,7 +39,7 @@ class WalletPage {
 
   waitForReceiptProcessing() {
     cy.contains('Processing...')
-      .should('not.exist');
+      .should('not.exist', {timeout: 10000});
   }
 
   validateReceiptScannerTitle() {

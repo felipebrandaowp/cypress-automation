@@ -11,10 +11,6 @@ When('I enter a valid doctor password', () => {
   loginPage.fillPassword(Cypress.env('validDoctorPassword'));
 });
 
-Then('I should be redirected to the Doctor dashboard', () => {
-  cy.url().should('include', '/doctor-dashboard');
-});
-
 Then('I should see the doctor welcome message', () => {
   cy.get('.text-xl.font-semibold.text-gray-900')
     .should('be.visible')

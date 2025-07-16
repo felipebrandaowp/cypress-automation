@@ -1,13 +1,12 @@
-class  doctorDashboardPage {
+class DoctorDashboardPage {
 
   dashboardCards() {
     return cy.get('.grid gap-6 md:grid-cols-2 lg:grid-cols-3');
   }
 
-  clickOnTotalPatients() {
-    this.dashboardCards()
-      .contains('Total Patients')
-      .click();
+  getTotalPatients() {
+    return this.dashboardCards()
+      .contains('Total Patients');
   }
 
 
@@ -41,4 +40,4 @@ class  doctorDashboardPage {
 
 }
 
-export default new doctorDashboardPage();
+export default DoctorDashboardPage;

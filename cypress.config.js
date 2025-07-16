@@ -3,6 +3,7 @@ const createBundler = require('@bahmutov/cypress-esbuild-preprocessor');
 const addCucumberPreprocessorPlugin = require('@badeball/cypress-cucumber-preprocessor').addCucumberPreprocessorPlugin;
 const createEsbuildPlugin = require('@badeball/cypress-cucumber-preprocessor/esbuild').createEsbuildPlugin;
 
+// eslint-disable-next-line no-undef
 module.exports = defineConfig({
   chromeWebSecurity: false,
   e2e: {

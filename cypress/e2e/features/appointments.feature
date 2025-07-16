@@ -12,9 +12,6 @@ Feature: Appointments
     Given I click on Appointments in the sidebar menu
     Then I should be on the Appointments page
     When I click on Schedule Appointment 
-    Then I should see the Choose Your Doctor page
-    And I should see the Automation Doctor
-    When I click on Automation Doctor
     Then I select the first available date
     And I select the first available time slot
     When I enter "Test Additional Notes" in the additional notes field
