@@ -4,22 +4,17 @@ class DoctorDashboardPage {
     return cy.get('.grid gap-6 md:grid-cols-2 lg:grid-cols-3');
   }
 
-  getTotalPatients() {
-    return this.dashboardCards()
-      .contains('Total Patients');
+  getTotalPatientsCard() {
+    return cy.xpath('//*[@id="root"]/div[2]/div/main/div/div[1]/div[1]');
   }
 
 
-  clickOnNewLabResults() {
-    this.dashboardCards()
-      .contains('New Lab Results')
-      .click();
+  getNewLabResultsCard() {
+    return cy.xpath('//*[@id="root"]/div[2]/div/main/div/div[1]/div[2]');
   }
 
-  clickOnAppointments() {
-    this.dashboardCards()
-      .contains('Appointments')
-      .click();
+  getAppointmentsCard() {
+    return cy.xpath('//*[@id="root"]/div[2]/div/main/div/div[1]/div[3]');
   }
 
   seeMoreRecentLMNRequests() {

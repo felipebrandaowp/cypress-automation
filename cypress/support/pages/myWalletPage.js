@@ -17,11 +17,6 @@ class WalletPage {
       .click();
   }
 
-  validateReceiptScannerTitle() {
-    cy.contains('Receipt Scanner')
-      .should('contain', 'Receipt Scanner');
-  }
-
   uploadReceipt(fileName) {
     cy.get('input[type="file"]')
       .selectFile(`cypress/support/files/${fileName}`, { force: true });
